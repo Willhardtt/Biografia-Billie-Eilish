@@ -1,0 +1,211 @@
+@charset "UTF-8";
+
+/*
+    Fonts Utilizadas no Site
+ */
+@import url('https://fonts.googleapis.com/css2?family=Belanosima:wght@400;600;700&display=swap');
+
+@import url('https://fonts.googleapis.com/css2?family=Be+Vietnam+Pro:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&family=Belanosima:wght@400;600;700&display=swap');
+
+
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: 'Be Vietnam Pro', Arial, Helvetica, sans-serif;
+}
+
+
+
+
+body{
+    color:white;
+    background-color: black;
+}
+
+
+/*
+    CSS IDS
+*/
+
+#Conteudo{
+    padding-bottom: 25%;
+}
+
+/* 
+    Nav Bar
+*/
+.header{
+    position: fixed;
+    top: 0;
+    left: 0;
+    width: 100%;
+    padding: 20px 100px;
+    background: transparent;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    z-index: 100;
+}
+
+.logo{
+    font-size: 32px;
+    color: rgba(240, 248, 255, 0.863);
+    text-decoration: none;
+    font-weight: 700;
+}
+
+.navbar a{
+    position: relative;
+    font-size: 18px;
+    color: #fff;
+    font-weight: 500;
+    text-decoration: none;
+    margin-left: 40px;
+}
+
+.navbar a::before{
+    content: '';
+    position: absolute;
+    top: 100%;
+    left: 0;
+    width: 0%;
+    height: 2px;
+    background: #fff;
+    transition: .3s;
+}
+
+.navbar a:hover::before{
+    width: 100%;
+
+}
+
+
+
+
+/* 
+  Inicio do Layout
+*/
+.Head{
+    width: 100%;
+    height: 38vh;
+    flex-direction: row;
+    position: relative;
+    justify-content: space-around;
+    flex-flow: wrap;
+    padding-top: 7%;
+    align-items: center;
+}
+
+.Linha > video{
+    width: 100%;
+    height: 280%;
+    position: absolute;
+    top: 0;
+    left: 0;
+    object-fit: cover;
+    box-shadow: 0px 20px 70px rgba(255, 255, 255, 0.137);
+    border-radius: 15px;
+
+}
+.Head > h1 {
+    color: rgba(240, 248, 255, 0.863);
+    font-size: 4em;
+    text-align: center;
+    align-items: center;
+    justify-content: center;
+    transform: translate(0,380%);
+
+    /* Responsividade */
+    flex-direction: row;
+    position: relative;
+    justify-content: space-around;
+    flex-flow: wrap;
+}
+.Head > h2 {
+    color:rgba(240, 248, 255, 0.863);
+    font-size: 1.5em;
+    text-align: center;
+    position: relative;
+    align-items: center;
+    justify-content: center;
+    transform: translate(0,680%);
+}
+
+
+
+
+
+/* .Introducao{
+    margin-top: 7%;
+    text-align: justify;
+    flex-direction: row;
+    position: relative;
+    justify-content: space-around;
+    flex-flow: wrap;
+}
+
+.Int1{
+    border-radius: 15px;
+    background-color: white;
+    color: black;
+    align-items: center;
+
+    
+}
+.Int1 > h3,p {
+    transform: translate(52%,0%);
+
+}
+
+.Imagem1 > img{
+    float: right;
+    width: 400px;
+    transform: translate(10%,-120%);
+    flex-direction: row;
+    position: relative;
+    justify-content: space-around;
+    flex-flow: wrap;
+}
+
+
+
+
+
+.Int2{
+    border-radius: 15px;
+    background-color: rgb(0, 0, 0);
+    color: white;
+    align-items: center;
+    flex-direction: row;
+    position: relative;
+    justify-content: space-around;
+    flex-flow: wrap;
+
+}
+.Int2 > h3{
+    transform: translate(400%,0%);
+
+}
+.Int2 > p{
+    transform: translate(400%,0%);
+    
+}
+
+
+
+
+
+.Sub{
+    font-weight: 750;
+    text-align: center;
+    max-width: 350px;
+    font-size: 1.2em;
+}
+
+.Paragrafos{
+    text-align: justify;
+    max-width: 350px;
+    font-size: 1.1em;
+} */
+
