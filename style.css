@@ -7,6 +7,15 @@
 
 @import url('https://fonts.googleapis.com/css2?family=Be+Vietnam+Pro:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&family=Belanosima:wght@400;600;700&display=swap');
 
+@import url('https://fonts.googleapis.com/css2?family=Patrick+Hand&display=swap');
+
+@import url('https://fonts.googleapis.com/css2?family=Neucha&family=Patrick+Hand&display=swap');
+
+@import url('https://fonts.googleapis.com/css2?family=Grandstander:ital,wght@0,100..900;1,100..900&family=Neucha&family=Patrick+Hand&display=swap');
+
+@import url('https://fonts.googleapis.com/css2?family=Annie+Use+Your+Telescope&family=Grandstander:ital,wght@0,100..900;1,100..900&family=Neucha&family=Patrick+Hand&display=swap');
+
+
 
 *{
     margin: 0;
@@ -35,22 +44,30 @@ body{
 /* 
     Nav Bar
 */
+
+header.rolagem{
+    background: rgba(0, 0, 0, 0.39);
+    padding: 20px 100px;
+}
+
+
 .header{
     position: fixed;
     top: 0;
     left: 0;
     width: 100%;
-    padding: 20px 100px;
+    padding: 60px 100px;
     background: transparent;
     display: flex;
     justify-content: space-between;
     align-items: center;
     z-index: 100;
+    transition: .5s;
 }
 
 .logo{
     font-size: 32px;
-    color: rgba(240, 248, 255, 0.863);
+    color: rgb(240, 248, 255);
     text-decoration: none;
     font-weight: 700;
 }
@@ -87,6 +104,7 @@ body{
   Inicio do Layout
 */
 .Head{
+    margin: 1px 0px 1px 0px;
     width: 100%;
     height: 38vh;
     flex-direction: row;
@@ -95,9 +113,10 @@ body{
     flex-flow: wrap;
     padding-top: 7%;
     align-items: center;
+    text-transform: uppercase;
 }
 
-.Linha > video{
+.V1 > video{
     width: 100%;
     height: 280%;
     position: absolute;
@@ -105,16 +124,17 @@ body{
     left: 0;
     object-fit: cover;
     box-shadow: 0px 20px 70px rgba(255, 255, 255, 0.137);
-    border-radius: 15px;
+    /* border-radius: 15px; */
 
 }
-.Head > h1 {
-    color: rgba(240, 248, 255, 0.863);
+.Head h1 {
+    color: rgb(240, 248, 255);
     font-size: 4em;
     text-align: center;
     align-items: center;
     justify-content: center;
     transform: translate(0,380%);
+    animation: fontchange 4s infinite;
 
     /* Responsividade */
     flex-direction: row;
@@ -122,7 +142,9 @@ body{
     justify-content: space-around;
     flex-flow: wrap;
 }
-.Head > h2 {
+
+
+.Head h2 {
     color:rgba(240, 248, 255, 0.863);
     font-size: 1.5em;
     text-align: center;
@@ -130,65 +152,30 @@ body{
     align-items: center;
     justify-content: center;
     transform: translate(0,680%);
+    animation: fontchange 4s infinite ;
 }
 
-
-
-
-
-/* .Introducao{
-    margin-top: 7%;
-    text-align: justify;
-    flex-direction: row;
-    position: relative;
-    justify-content: space-around;
-    flex-flow: wrap;
-}
-
-.Int1{
-    border-radius: 15px;
-    background-color: white;
-    color: black;
-    align-items: center;
-
-    
-}
-.Int1 > h3,p {
-    transform: translate(52%,0%);
-
-}
-
-.Imagem1 > img{
-    float: right;
-    width: 400px;
-    transform: translate(10%,-120%);
-    flex-direction: row;
-    position: relative;
-    justify-content: space-around;
-    flex-flow: wrap;
-}
-
-
-
-
-
-.Int2{
-    border-radius: 15px;
-    background-color: rgb(0, 0, 0);
-    color: white;
-    align-items: center;
-    flex-direction: row;
-    position: relative;
-    justify-content: space-around;
-    flex-flow: wrap;
-
-}
-.Int2 > h3{
-    transform: translate(400%,0%);
-
-}
-.Int2 > p{
-    transform: translate(400%,0%);
+@keyframes fontchange {
+    0%,20%{
+        font-family: 'Be Vietnam Pro';
+        content: "Billie Eilish O'Connell";
+    }
+    21%,40%{
+        font-family: 'Patrick Hand';
+        content: "Billie Eilish O'Connell";
+    }
+    41%,60%{
+        font-family: 'Neucha';
+        content: "Billie Eilish O'Connell";
+    }
+    61%,80%{
+        font-family: 'Grandstander';
+        content: "Billie Eilish O'Connell";
+    }
+    81%,40%{
+        font-family: 'Annie Use Your Telescope';
+        content: "Billie Eilish O'Connell";
+    }
     
 }
 
@@ -198,14 +185,103 @@ body{
 
 .Sub{
     font-weight: 750;
-    text-align: center;
+    text-align: justify;
     max-width: 350px;
-    font-size: 1.2em;
+    font-size: 2em;
 }
 
 .Paragrafos{
     text-align: justify;
-    max-width: 350px;
-    font-size: 1.1em;
-} */
+    max-width: 615px;
+    font-size: 1.6em;
+} 
+
+.Introducao{
+    height: 950px;
+    margin: 0;
+    margin-top: 655px;
+    margin-bottom: 0px;
+    text-align: justify;
+    flex-direction: row;
+    background-color: white;
+    justify-content: space-around;
+    flex-flow: wrap;
+
+}
+
+.Int1{
+
+    border-radius: 15px;
+    background-color: white;
+    color: black;
+    align-items: center;
+    
+}
+
+
+.Int1 h3 {
+    margin-left: 250px;
+    padding-top: 200px;
+    max-width: fit-content;
+    text-align: justify;
+   
+
+}
+.Int1 p {
+    margin-left: 250px;
+    padding-top: 20px;
+
+}
+
+.Int1 img{
+    margin-right: 200px;
+    margin-top: -774px ;
+    float: right;
+    width: 460px;
+    flex-direction: row;
+    position: relative;
+    justify-content: space-around;
+    flex-flow: wrap;
+}
+
+
+
+
+
+
+
+.Int2{
+    margin: 0;
+    height: 950px;
+    margin-top: 655px;
+    background-color: black;
+    color: white;
+    align-items: center;
+}
+
+
+.Iframe{
+    
+    margin-top: -1970px;
+    position: absolute;
+    margin: 2250px 150px;
+    top:30px;
+    left:40px; 
+
+}
+
+.V2 video{
+    
+    margin-top: 1970px ;
+    width: 100%;
+    height: 100%;
+    position: absolute;
+    top: 0;
+    left: 0;
+    object-fit: cover;
+
+}
+
+
+
 

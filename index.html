@@ -4,6 +4,7 @@
         <meta charset="UTF-8">
         <meta name="viewport" content="width=device-width, initial-scale=1.0">
         <link rel="stylesheet" href="style.css">
+        <link rel="stylesheet" href="https://unpkg.com/aos@next/dist/aos.css" />
         <title>Billie Eilish Eras</title>
     </head>
     <body>
@@ -18,13 +19,12 @@
                 <a href="#">WWIMF</a>
             </nav>
 
-
         </header>
 
         <div class="Head">
-            <div class="Linha">
-               <video src="Videos/BillieVideo2.mp4" autoplay loop muted></video>
-            </div>    
+            <div class="V1">
+               <video src="Videos/BillieVideo2.mp4" autoplay loop muted type="video/mp4"></video>
+            </div>   
             <h1>BILLIE EILISH O'CONNELL</h1>
             <h2>CONHEÇA O FENÔMENO DA GERAÇÃO</h2>
         </div>
@@ -33,25 +33,41 @@
         <main id="Conteudo">
             <div class="Introducao">
                 <div class="Int1">
-                    <h3 class="Sub">VAMOS DO COMEÇO, QUEM É BILLIE?</h3>
-                        <p class="Paragrafos">
-                            Billie Eilish Pirate Baird O'Connell é uma cantora e compositora estadunidense. Ganhou popularidade em 2016, quando lançou o single de estreia "Ocean Eyes" no SoundCloud, posteriormente lançado pelas gravadoras Darkroom e Interscope Records. A canção foi escrita e produzida por seu irmão Finneas O'Connell, com quem ela colabora em músicas e shows ao vivo. Eilish é mais conhecida por seu single "Bad Guy", de 2019, que atingiu o topo da Billboard Hot 100. Ela foi indicada para seis Grammy Awards, incluindo Gravação do Ano, Álbum do Ano, Canção do Ano e Melhor Revelação. Ela é a artista mais jovem a ter sido indicada nas principais categorias do Grammy Awards.
-                        </p>
-                        <div class="Imagem1">
-                            <img src="Imagens/BillieFoto.png" alt="Bilie Eilish">
-                        </div>
+                    <div data-aos="fade-right" data-aos-duration="3500">
+                        <h3 class="Sub">VAMOS DO COMEÇO, QUEM É BILLIE?</h3>
+                            <p class="Paragrafos">
+                                Billie Eilish Pirate Baird O'Connell é uma cantora e compositora estadunidense. Ganhou popularidade em 2016, quando lançou o single de estreia "Ocean Eyes" no SoundCloud, posteriormente lançado pelas gravadoras Darkroom e Interscope Records. A canção foi escrita e produzida por seu irmão Finneas O'Connell, com quem ela colabora em músicas e shows ao vivo. Eilish é mais conhecida por seu single "Bad Guy", de 2019, que atingiu o topo da Billboard Hot 100. Ela foi indicada para seis Grammy Awards, incluindo Gravação do Ano, Álbum do Ano, Canção do Ano e Melhor Revelação. Ela é a artista mais jovem a ter sido indicada nas principais categorias do Grammy Awards.
+                            </p>
+                    </div>
+
+                    <img data-aos="fade-left" data-aos-duration="3000" src="Imagens/BillieFoto.png" alt="Bilie Eilish">
                 </div>
                 
                 <div class="Int2">
-                    <h3 class="Sub">OLHE, AS LUZES ESTÃO SE ACENDENDO</h3>
-                        <p class="Paragrafos">
-                            Mesmo com o seu primeiro single intitulado "Ocean Eyes", Billie realmente
-                            teve atenção do público com sua colaboração com o cantor Khalid, a qual os dois fizeram uma música para a trilha sonora para a série 13 Reasons Why do
-                            streaming Netflix, alcançando a Billboard Hot 100 em 2019, hoje a colaboração conta com mais de 2 bilhões de views no YouTube!
-                        </p>
+                    <div class="V2">
+                        <video src="Videos/BillieVideo3.mp4" autoplay loop muted type="video/mp4"></video>
+                    </div>
+                    <div class="Iframe" data-aos="fade-up-right" data-aos-duration="9000">
+                        <iframe style="border-radius:12px" src="https://open.spotify.com/embed/album/0S0KGZnfBGSIssfF54WSJh?utm_source=generator&theme=0" width="120%" height="352" frameBorder="0" allowfullscreen="" allow="autoplay; clipboard-write; encrypted-media; fullscreen; picture-in-picture" loading="lazy"></iframe>
+                    </div>
+                    
+
                 </div>
+
              </div>
+
         </main>
 
+
+
+        <script src="menu.js "></script>
+
+        <script src="https://unpkg.com/aos@2.3.1/dist/aos.js"></script>
+        <script>
+            AOS.init();
+        </script>
     </body>
+
+
+    
 </html>
