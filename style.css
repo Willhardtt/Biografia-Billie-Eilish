@@ -15,6 +15,13 @@
 
 @import url('https://fonts.googleapis.com/css2?family=Annie+Use+Your+Telescope&family=Grandstander:ital,wght@0,100..900;1,100..900&family=Neucha&family=Patrick+Hand&display=swap');
 
+@font-face {
+    font-family: 'WWFAWDWG';
+    src: url('fonts/Whenweallfallasleep-Regular.ttf')format('truetype');
+    font-weight: normal;
+    font-style: normal;
+}
+
 
 
 *{
@@ -104,9 +111,9 @@ header.rolagem{
   Inicio do Layout
 */
 .Head{
-    margin: 1px 0px 1px 0px;
-    width: 100%;
-    height: 38vh;
+    margin: 0px;
+    width: 1652px;
+    height: 1011.84px;
     flex-direction: row;
     position: relative;
     justify-content: space-around;
@@ -117,23 +124,22 @@ header.rolagem{
 }
 
 .V1 > video{
-    width: 100%;
-    height: 280%;
+    width: 1903.4px;
+    height: 1011.85px;
     position: absolute;
     top: 0;
     left: 0;
     object-fit: cover;
-    box-shadow: 0px 20px 70px rgba(255, 255, 255, 0.137);
-    /* border-radius: 15px; */
-
 }
+
 .Head h1 {
+    width: 115.2%;
+    margin-top: 260px;
     color: rgb(240, 248, 255);
     font-size: 4em;
     text-align: center;
     align-items: center;
     justify-content: center;
-    transform: translate(0,380%);
     animation: fontchange 4s infinite;
 
     /* Responsividade */
@@ -145,13 +151,14 @@ header.rolagem{
 
 
 .Head h2 {
+    width: 115.2%;
+    margin: 0px;
     color:rgba(240, 248, 255, 0.863);
     font-size: 1.5em;
     text-align: center;
     position: relative;
     align-items: center;
     justify-content: center;
-    transform: translate(0,680%);
     animation: fontchange 4s infinite ;
 }
 
@@ -169,7 +176,7 @@ header.rolagem{
         content: "Billie Eilish O'Connell";
     }
     61%,80%{
-        font-family: 'Grandstander';
+        font-family: 'Patrick Hand';
         content: "Billie Eilish O'Connell";
     }
     81%,40%{
@@ -186,7 +193,7 @@ header.rolagem{
 .Sub{
     font-weight: 750;
     text-align: justify;
-    max-width: 350px;
+    max-width: 900px;
     font-size: 2em;
 }
 
@@ -199,8 +206,6 @@ header.rolagem{
 .Introducao{
     height: 950px;
     margin: 0;
-    margin-top: 655px;
-    margin-bottom: 0px;
     text-align: justify;
     flex-direction: row;
     background-color: white;
@@ -211,7 +216,6 @@ header.rolagem{
 
 .Int1{
 
-    border-radius: 15px;
     background-color: white;
     color: black;
     align-items: center;
@@ -251,36 +255,75 @@ header.rolagem{
 
 
 .Int2{
+    position: absolute;
     margin: 0;
     height: 950px;
-    margin-top: 655px;
     background-color: black;
     color: white;
     align-items: center;
 }
 
+.Caixa{
+    filter: blur(10px);
+    width: 80%;
+    padding-bottom: 65%;
+    background-color: rgba(0, 0, 0, 0.507);
+    border-radius: 15px;
+    position: absolute;
+    margin: 160px 116%;
+    left: 40px;
+    bottom: 2%;
+    
+}
+
+.Int2 h3{
+    width: 80%;
+    margin: 200px 120%;
+    font-family: 'WWFAWDWG';
+    text-shadow: 0.1em 0.1em 0.2em rgba(0, 0, 0, 0.301);
+    color: rgb(240, 248, 255);
+    position: relative;
+    font-size: 4em;
+    text-align: center;
+    align-items: center;
+    justify-content: center;
+
+
+}
+
+.Int2 p{
+    position: relative;
+    width: 80%;
+    margin: 0% 126.4%;
+    padding-top: 0% ;
+    text-align: justify;
+    align-items: center;
+    justify-content: center;
+
+}
+
 
 .Iframe{
     
-    margin-top: -1970px;
     position: absolute;
-    margin: 2250px 150px;
-    top:30px;
-    left:40px; 
+    margin: 150px 150px;
+    left: 40px; 
+    bottom: 2%;
 
 }
 
 .V2 video{
     
-    margin-top: 1970px ;
-    width: 100%;
-    height: 100%;
+    width: 1903.4px;
+    height: 1011.85px;
     position: absolute;
     top: 0;
     left: 0;
     object-fit: cover;
 
 }
+
+
 
 
 
